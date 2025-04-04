@@ -1,5 +1,14 @@
-# ToDoList - C# Console Application
+# Todo List - C# Console Application
 Overview
+
+## Todo-list-project/
+│
+├── Program.cs            # Main program that handles user interaction and task management.
+├── bin/Debug/            # Folder where the JSON file ToDoList.json is stored.
+│   └── ToDoList.json     # JSON file where tasks are saved and loaded from.
+└── README.md             # This file explaining the project and how to use it.
+
+
 
 ## This is a simple To-Do list application written in C# for the command-line interface. It allows users to manage tasks, including adding, editing, marking tasks as complete, and saving/loading tasks from a JSON file. The program offers basic task management functionality like sorting tasks by due date or project name, and the ability to persist task data in a JSON file.
 ### Features
