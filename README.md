@@ -2,11 +2,9 @@
 Overview
 
 ## Todo-list-project/
-│
-├── Program.cs            # Main program that handles user interaction and task management.
-├── bin/Debug/            # Folder where the JSON file ToDoList.json is stored.
-│   └── ToDoList.json     # JSON file where tasks are saved and loaded from.
-└── README.md             # This file explaining the project and how to use it.
+Program.cs                          # Main program that handles user interaction and task management.
+bin/Debug/ToDoList.json             # Folder where the JSON file ToDoList.json is stored.
+README.md                           # This file explaining the project and how to use it.
 
 
 
