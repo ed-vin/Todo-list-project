@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 
 class Program //huvudprogrammet 
 {
@@ -49,14 +49,18 @@ class Program //huvudprogrammet
     {
         int completedTasks = tasks.Count(t => t.IsDone); // räkna antalet avklarade uppgifter
         int totalTasks = tasks.Count; // räkna det totala antalet uppgifter
-
-        Console.WriteLine("Välkommen till att-göra-listan");
+        
+        Console.ForegroundColor = ConsoleColor.Cyan; // sätt färg på välkomms-texten
+        Console.WriteLine(">> Välkommen till att-göra-listan <<");
+        Console.ResetColor(); // återställ färgen
         Console.WriteLine($"Du har {totalTasks} saker på listan varav {completedTasks} saker är avklarade.");
         Console.WriteLine("Välj ett alternativ genom att skriva numret:");
+        Console.WriteLine("================================================================");
         Console.WriteLine("1. Visa listan för uppgifter (sortera efter datum eller projekt).");
         Console.WriteLine("2. Lägg till uppgift.");
         Console.WriteLine("3. Ändra uppgift (uppdatera, markera som klar, ta bort uppgift).");
         Console.WriteLine("4. Spara och avsluta.");
+        Console.WriteLine("================================================================");
         Console.Write("Ange ditt val (1-4): ");
     }
 
@@ -71,7 +75,7 @@ class Program //huvudprogrammet
         else // sortera listan
         {
             Console.WriteLine("Välj hur du vill sortera listan:");
-            Console.WriteLine("1. Sortera efter förfallodatum.");
+            Console.WriteLine("1. Sortera efter datum.");
             Console.WriteLine("2. Sortera efter projekt.");
 
             string sortChoice = Console.ReadLine();
